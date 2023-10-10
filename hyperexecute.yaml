@@ -7,24 +7,20 @@ testSuiteStep: 150
 runson: win
 
 autosplit: true
-retryOnFailure: false
+retryOnFailure: true
 
 runtime:
   language: node
   version: "18"
 
-debug: true
-
-# maxRetries: 1
-concurrency: 1
+maxRetries: 1
+concurrency: 7
 pre:
   - node -v
   - npm install
 
 post:
   - echo 'Done'
-
-mergeArtifacts: true
 
 
 framework:
