@@ -18,6 +18,7 @@ concurrency: 7
 pre:
   - node -v
   - npm install
+  - curl ipinfo.io
 
 post:
   - echo 'Done'
