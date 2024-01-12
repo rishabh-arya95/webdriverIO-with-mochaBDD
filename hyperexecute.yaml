@@ -26,6 +26,6 @@ post:
 
 framework:
   name: wdio/mocha
-  discoveryType: suite #suite #test #wdiosuite #file
+  discoveryType: suite #suite  #wdiosuite #file # test (#test is not recommned for this repo)
   defaultReports: false
   flags: ["wdio.lambdatest.conf.ts"]
